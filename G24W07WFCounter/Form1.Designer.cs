@@ -25,6 +25,7 @@
         private void InitializeComponent() {
             labelCount = new Label();
             btnAdd = new Button();
+            btnSub = new Button();
             SuspendLayout();
             // 
             // labelCount
@@ -42,17 +43,28 @@
             // 
             btnAdd.Location = new Point(-1, 280);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(291, 51);
+            btnAdd.Size = new Size(133, 51);
             btnAdd.TabIndex = 1;
             btnAdd.Text = "증가";
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += OnAdd;
+            // 
+            // btnSub
+            // 
+            btnSub.Location = new Point(157, 280);
+            btnSub.Name = "btnSub";
+            btnSub.Size = new Size(133, 51);
+            btnSub.TabIndex = 1;
+            btnSub.Text = "감소";
+            btnSub.UseVisualStyleBackColor = true;
+            btnSub.Click += OnSub;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(290, 332);
+            Controls.Add(btnSub);
             Controls.Add(btnAdd);
             Controls.Add(labelCount);
             Name = "Form1";
@@ -64,5 +76,6 @@
 
         private Label labelCount;
         private Button btnAdd;
+        private Button btnSub;
     }
 }
